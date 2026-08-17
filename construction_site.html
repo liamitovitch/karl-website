@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>KB Groupe Construction</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #0B0B0B;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-weight: bold;
+  color: #E6A51A;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #E6A51A;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::after {
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 90px;
+  line-height: 0.95;
+}
+
+.hero h1 span {
+  color: #E6A51A;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #ccc;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: 1px solid #E6A51A;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background: #E6A51A;
+  color: black;
+}
+
+/* SECTION */
+section {
+  padding: 100px 80px;
+}
+
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.yellow {
+  color: #E6A51A;
+}
+
+/* SERVICES */
+.service {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-top: 25px;
+}
+.service p {
+  margin-top: 0;
+}
+section {
+  padding: 60px 80px 100px;
+}
+
+.service img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.service div {
+  flex: 1;
+}
+
+ul {
+  margin-top: 15px;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* CONTACT */
+.contact-box {
+  display: flex;
+  gap: 50px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  background: #141414;   /* slightly lighter than body (#0B0B0B) */
+  color: white;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+/* when user clicks inside */
+input:focus, textarea:focus {
+  border-color: #E6A51A;
+  box-shadow: 0 0 8px rgba(230,165,26,0.3);
+}
+
+/* placeholder text */
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+input, textarea, button {
+  font-family: Inter, sans-serif;
+}
+
+button {
+  background: #E6A51A;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .service img {
+    width: 100%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+  .about-text p {
+  color: #ccc;
+  font-size: 30px;
+  line-height: 1.8;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">KB GROUPE</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#residential">Residential</a>
+    <a href="#commercial">Commercial</a>
+    <a href="#brick">Brick Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-content">
+    <h1>
+      TURN YOUR<br>
+      <span>TO-DO JOB</span><br>
+      INTO A JOB<br>
+      WELL DONE.
+    </h1>
+
+    <p>KB Groupe Construction is a licensed general contractor owned and operated by Karl Bernhardt, based in West-end Montreal — delivering expert construction across residential, commercial, industrial, and institutional sectors.</p>
+
+    <div class="buttons">
+        <a href="#contact" class="btn">Get In Touch</a>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">BUILT ON<span class="yellow"> EXPERTICE</span></div>
+
+  <div class="service">
+    <div>
+      <p style="color:#ccc; font-size: 100px;"></p>
+        KB Groupe Construction is owned and operated by Karl Bernhardt — a licensed, insured, and bonded general contractor serving the Greater Montreal area. With deep expertise across three major construction disciplines, we bring quality craftsmanship and professional project management to every job.
+        From intricate brick and stone work to full-scale commercial projects, KB Construction is your trusted partner from the first estimate to the final inspection.
+      </p>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="KB Groupe Construction">
+  </div>
+</section>
+
+<!-- RESIDENTIAL -->
+<section id="residential">
+  <div class="section-title">RESIDENTIAL <span class="yellow">RENOVATION</span></div>
+
+  <div class="service">
+    <img src="images/kitchen_image.jpg" alt="Construction image">
+    <div>
+      <p>We transform Montreal homes with expert renovation work — from full kitchen and bathroom remodels to basement finishing and exterior upgrades. Every detail is handled with care and professionalism.</p>
+      <ul>
+        <li>Bathrooms, Kitchens & Basements</li>
+        <li>Interior & Exterior Renovation</li>
+        <li>Specialized Finishing Work</li>
+        <li>Detailed & Specialised Work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL -->
+<section id="commercial">
+  <div class="section-title">COMMERCIAL <span class="yellow">CONSTRUCTION</span></div>
+
+  <div class="service">
+    <div>
+      <p>From high-rise swing stage work to SMART building systems, KB Construction has the expertise and certified labour to handle complex large-scale projects on time and within budget.</p>
+      <ul>
+        <li>Project Management</li>
+        <li>Height Work & Swing Stage</li>
+        <li>Mechanical Systems</li>
+        <li>Emergency Restoration</li>
+        <li>Water,Smoke & Fire Damage Restore</li>
+        <li>SMART Building Management</li>
+        <li>Hiring Out of Carded Labour</li>
+      </ul>
+    </div>
+
+    <img src="images/construction_image.jpg" alt="Construction image">
+  </div>
+</section>
+
+<!-- BRICK -->
+<section id="brick">
+  <div class="section-title">BRICK WORK & <span class="yellow">MASONRY</span></div>
+
+  <div class="service">
+    <img src="images/stone_slabs_image.jpg" alt="Construction image">
+    <div>
+      <p>From precise brick-laying to decorative stone finishes, our masonry specialists deliver structural integrity and visual craftsmanship that stands the test of time.</p>
+      <ul>
+        <li>Brick Work</li>
+        <li>Concrete Work</li>
+        <li>Stone Work</li>
+        <li>Slab Work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-title">CONTACT <span class="yellow">US</span></div>
+
+  <div class="contact-box">
+
+    <!-- FORM (Formspree working version) -->
+    <form action="https://formspree.io/f/xqeogboy" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <div style="color:#ccc;">
+      <p><strong>Phone:</strong> (To be added)</p>
+      <p><strong>Email:</strong> info@kbconstruction.ca</p>
+      <p><strong>Location:</strong> West-End Montreal</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
