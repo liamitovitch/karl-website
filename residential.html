@@ -1,0 +1,259 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="description" content="KB Groupe Construction provides professional residential renovation services in Montreal, including kitchens, bathrooms, basements, interior renovations, and exterior upgrades.">
+
+<meta name="robots" content="index, follow">
+
+<title>Residential Renovation Montreal | KB Groupe Construction</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #0B0B0B;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+nav {
+  width: 100%;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+nav .logo {
+  font-weight: bold;
+  color: #E6A51A;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #E6A51A;
+}
+
+.hero {
+  min-height: 70vh;
+  background: url("images/kitchen_image.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 85px;
+  line-height: 0.95;
+}
+
+.hero h1 span,
+.yellow {
+  color: #E6A51A;
+}
+
+.hero p {
+  margin-top: 25px;
+  color: #ccc;
+  max-width: 700px;
+}
+
+section {
+  padding: 80px;
+}
+
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.service img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.service div {
+  flex: 1;
+}
+
+ul {
+  margin-top: 20px;
+  color: #ccc;
+  line-height: 2;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  border: 1px solid #E6A51A;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background: #E6A51A;
+  color: black;
+}
+
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .service img {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">KB GROUPE</div>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="residential.html">Residential</a>
+    <a href="commercial.html">Commercial</a>
+    <a href="brick-work.html">Brick Work</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      RESIDENTIAL<br>
+      <span>RENOVATION</span><br>
+      IN MONTREAL
+    </h1>
+
+    <p>
+      KB Groupe Construction provides professional residential renovation
+      services throughout Montreal and surrounding areas. From kitchens and
+      bathrooms to basements and exterior upgrades, we help homeowners
+      transform their properties.
+    </p>
+
+    <a href="index.html#contact" class="btn">Get In Touch</a>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    RESIDENTIAL <span class="yellow">SERVICES</span>
+  </div>
+
+  <div class="service">
+    <img src="images/kitchen_image.jpg" alt="Residential renovation in Montreal">
+
+    <div>
+      <p>
+        We transform Montreal homes with professional renovation and
+        construction services. Every project is approached with attention
+        to detail, quality workmanship, and professional project management.
+      </p>
+
+      <ul>
+        <li>Kitchen Renovations</li>
+        <li>Bathroom Renovations</li>
+        <li>Basement Finishing</li>
+        <li>Interior Renovations</li>
+        <li>Exterior Renovations</li>
+        <li>Specialized Finishing Work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    BUILT FOR <span class="yellow">YOUR HOME</span>
+  </div>
+
+  <p style="color:#ccc; max-width:900px;">
+    From smaller renovation projects to larger residential construction,
+    KB Groupe Construction works with homeowners throughout the Greater
+    Montreal area to deliver professional and reliable results.
+  </p>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    CONTACT <span class="yellow">US</span>
+  </div>
+
+  <p style="color:#ccc;">
+    Planning a residential renovation in Montreal?
+    Contact KB Groupe Construction to discuss your project.
+  </p>
+
+  <a href="index.html#contact" class="btn">Request a Quote</a>
+</section>
+
+</body>
+</html>
+```
