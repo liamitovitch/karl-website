@@ -1,48 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" id="html-root">
+<head>
 <meta charset="UTF-8" />
-<meta name="description" content="KB Construction Group provides professional construction, renovation, and general contracting services in Montreal and surrounding areas. Contact us for your next project.">
-<title>General Contractor Montreal | KB Construction Group</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<meta name="robots" content="index, follow">
-<style>
-  <link rel="canonical" href="https://www.kbconstructiongroup.ca/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="KB Groupe Construction — licensed, insured & bonded general contractor in Montreal (RBQ 8361-4172-01). 25 years of residential renovation, commercial construction & masonry. 24/7 emergency service. Call (514) 359-5328.">
+<title>General Contractor Montreal | KB Groupe Construction | RBQ Licensed</title>
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Favicon (replace with a real branded icon/PNG set before launch — this SVG is a placeholder) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230B0B0B%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22%23E6A51A%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-weight=%22bold%22>K</text></svg>">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.kbconstructiongroup.ca/">
+<link rel="alternate" hreflang="en-ca" href="https://www.kbconstructiongroup.ca/">
+<link rel="alternate" hreflang="fr-ca" href="https://www.kbconstructiongroup.ca/">
+
+<!-- Open Graph / Social sharing -->
 <meta property="og:type" content="business.business">
-<meta property="og:title" content="General Contractor Montreal | KB Construction Group">
-<meta property="og:description" content="Licensed general contractor serving Montreal — residential renovation, commercial construction, and masonry services from Karl Bernhardt and the KB Construction team.">
+<meta property="og:title" content="General Contractor Montreal | KB Groupe Construction | RBQ Licensed">
+<meta property="og:description" content="Licensed, insured & bonded general contractor serving Montreal for 25 years — residential renovation, commercial construction, masonry & 24/7 emergency restoration.">
 <meta property="og:image" content="https://www.kbconstructiongroup.ca/images/kb-construction-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.kbconstructiongroup.ca/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:locale:alternate" content="fr_CA">
 <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">
+<meta name="twitter:title" content="General Contractor Montreal | KB Groupe Construction | RBQ Licensed">
+<meta name="twitter:description" content="Licensed, insured & bonded general contractor serving Montreal for 25 years — residential renovation, commercial construction, masonry & 24/7 emergency restoration.">
+<meta name="twitter:image" content="https://www.kbconstructiongroup.ca/images/kb-construction-og.jpg">
+<meta name="theme-color" content="#0B0B0B">
+
+<!-- Local Business structured data -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
-  "name": "KB Construction Group",
-  "alternateName": "KB Groupe Construction",
+  "name": "KB Groupe Construction",
+  "alternateName": "KB Construction Group",
   "url": "https://www.kbconstructiongroup.ca/",
-  "description": "Licensed, insured, and bonded general contractor...",
-  "founder": { "@type": "Person", "name": "Karl Bernhardt" },
-  "areaServed": { "@type": "City", "name": "Montreal" },
+  "description": "Licensed, insured, and bonded general contractor (RBQ 8361-4172-01) serving the Greater Montreal area for 25 years with residential renovation, commercial construction, masonry, and 24/7 emergency restoration services.",
+  "founder": {
+    "@type": "Person",
+    "name": "Karl Bernhardt"
+  },
+  "foundingDate": "1999",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "RBQ License Number",
+    "value": "8361-4172-01"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Montreal"
+  },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Montreal",
     "addressRegion": "QC",
     "addressCountry": "CA"
   },
+  "telephone": "+1-514-359-5328",
   "email": "info@kbconstruction.ca",
   "priceRange": "$$",
+  "image": "https://www.kbconstructiongroup.ca/images/kb-construction-og.jpg",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "additionalProperty": {
+    "@type": "PropertyValue",
+    "name": "Emergency Restoration Availability",
+    "value": "24/7"
+  },
   "sameAs": []
 }
 </script>
+
+<style>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid #E6A51A;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #E6A51A;
+  color: #0B0B0B;
+  padding: 12px 20px;
+  z-index: 2000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
 }
 
 body {
@@ -53,24 +131,59 @@ body {
   line-height: 1.6;
 }
 
+/* EMERGENCY BAR */
+.emergency-bar {
+  background: #E6A51A;
+  color: #0B0B0B;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 10px;
+  letter-spacing: 0.3px;
+}
+
+.emergency-bar a {
+  color: #0B0B0B;
+  text-decoration: underline;
+}
+
 /* NAVBAR */
 nav {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.85);
+  width: 100%;
+  background: rgba(0,0,0,0.92);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 18px 60px;
   z-index: 1000;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav .logo-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 nav .logo {
   font-weight: bold;
   color: #E6A51A;
   letter-spacing: 1px;
+}
+
+nav .logo-sub {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -85,35 +198,32 @@ nav a:hover {
   color: #E6A51A;
 }
 
+#lang-toggle {
+  background: transparent;
+  border: 1px solid #E6A51A;
+  color: #E6A51A;
+  font-size: 13px;
+  padding: 6px 12px;
+  margin-left: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  transition: 0.3s;
+}
+
+#lang-toggle:hover {
+  background: #E6A51A;
+  color: black;
+}
+
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/hero_jobsite.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 80px;
-}
-
-.hero {
-  position: relative;
-  isolation: isolate;
-}
-
-.hero::after {
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
+  padding: 60px 80px;
 }
 
 .hero-content {
@@ -123,7 +233,7 @@ nav a:hover {
 
 .hero h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 0.95;
 }
 
@@ -131,10 +241,28 @@ nav a:hover {
   color: #E6A51A;
 }
 
+.hero .tagline {
+  margin-top: 18px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  color: #E6A51A;
+  letter-spacing: 1px;
+}
+
 .hero p {
   margin-top: 20px;
   color: #ccc;
   max-width: 600px;
+}
+
+.license-line {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #999;
+}
+
+.license-line strong {
+  color: #E6A51A;
 }
 
 .buttons {
@@ -145,6 +273,7 @@ nav a:hover {
   padding: 12px 20px;
   border: 1px solid #E6A51A;
   margin-right: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   cursor: pointer;
   transition: 0.3s;
@@ -159,13 +288,14 @@ nav a:hover {
 
 /* SECTION */
 section {
-  padding: 100px 80px;
+  padding: 60px 80px 100px;
 }
 
 .section-title {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 
 .yellow {
@@ -182,13 +312,12 @@ section {
 .service p {
   margin-top: 0;
 }
-section {
-  padding: 60px 80px 100px;
-}
 
 .service img {
   width: 50%;
   border-radius: 10px;
+  height: auto;
+  display: block;
 }
 
 .service div {
@@ -199,6 +328,44 @@ ul {
   margin-top: 15px;
   color: #ccc;
   line-height: 1.8;
+}
+
+/* TRUST BADGES */
+.trust {
+  background: #111;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.trust-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #999;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.badge-row a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.badge-row a:hover {
+  border-color: #E6A51A;
+  color: #E6A51A;
 }
 
 /* CONTACT */
@@ -214,7 +381,7 @@ form {
 }
 
 input, textarea {
-  background: #141414;   /* slightly lighter than body (#0B0B0B) */
+  background: #141414;
   color: white;
   border: 1px solid #222;
   border-radius: 6px;
@@ -222,16 +389,13 @@ input, textarea {
   margin-bottom: 15px;
   outline: none;
   transition: 0.3s;
-  backdrop-filter: blur(5px);
 }
 
-/* when user clicks inside */
 input:focus, textarea:focus {
   border-color: #E6A51A;
   box-shadow: 0 0 8px rgba(230,165,26,0.3);
 }
 
-/* placeholder text */
 input::placeholder, textarea::placeholder {
   color: #888;
 }
@@ -239,12 +403,37 @@ input, textarea, button {
   font-family: Inter, sans-serif;
 }
 
-button {
+button[type="submit"] {
   background: #E6A51A;
   padding: 12px;
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+/* honeypot field, hidden from real users */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+footer {
+  padding: 30px 80px 50px;
+  border-top: 1px solid #222;
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  color: #999;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer .footer-links a:hover {
+  color: #E6A51A;
 }
 
 /* MOBILE */
@@ -253,18 +442,28 @@ button {
   nav {
     flex-direction: column;
     gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  nav a, #lang-toggle {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .hero {
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .hero h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 
   section {
-    padding: 60px 20px;
+    padding: 50px 20px;
   }
 
   .service {
@@ -278,10 +477,13 @@ button {
   .contact-box {
     flex-direction: column;
   }
-  .about-text p {
-  color: #ccc;
-  font-size: 30px;
-  line-height: 1.8;
+
+  .trust {
+    padding: 40px 20px;
+  }
+
+  .badge-row {
+    gap: 20px;
   }
 }
 </style>
@@ -289,68 +491,81 @@ button {
 
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- EMERGENCY BAR -->
+<div class="emergency-bar">
+  <span data-i18n="emergencyBar">24/7 EMERGENCY RESTORATION SERVICE</span> — <a href="tel:+15143595328">(514) 359-5328</a>
+</div>
+
 <!-- NAV -->
 <nav>
-  <div class="logo">KB GROUPE</div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#residential">Residential</a>
-    <a href="#commercial">Commercial</a>
-    <a href="#brick">Brick Work</a>
-    <a href="#contact">Contact</a>
+  <div class="logo-block">
+    <div class="logo">KB GROUPE CONSTRUCTION</div>
+    <div class="logo-sub" data-i18n="rbqNav">RBQ 8361-4172-01</div>
+  </div>
+  <div class="nav-links">
+    <a href="#home" data-i18n="navHome">Home</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#residential" data-i18n="navResidential">Residential</a>
+    <a href="#commercial" data-i18n="navCommercial">Commercial</a>
+    <a href="#brick" data-i18n="navBrick">Brick Work</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+    <a href="tel:+15143595328" style="color:#E6A51A;">514-359-5328</a>
+    <button id="lang-toggle" type="button" aria-label="Switch language / Changer de langue">FR</button>
   </div>
 </nav>
 
+<main id="main-content">
 <!-- HERO -->
 <div class="hero" id="home">
   <div class="hero-content">
     <h1>
-  GENERAL CONTRACTOR<br>
-  <span>IN MONTREAL</span><br>
-  TURNING YOUR<br>
-  TO-DO JOB INTO A<br>
-  JOB WELL DONE.
-</h1>
+      <span data-i18n="heroLine1">GENERAL CONTRACTOR</span><br>
+      <span class="yellow" data-i18n="heroLine2">IN MONTREAL</span>
+    </h1>
+    <div class="tagline" data-i18n="heroTagline">25 YEARS OF BUILDING ON TRUST</div>
 
-    <p>KB Groupe Construction is a licensed general contractor owned and operated by Karl Bernhardt, based in West-end Montreal — delivering expert construction across residential, commercial, industrial, and institutional sectors.</p>
+    <p data-i18n="heroBody">KB Groupe Construction is a licensed general contractor owned and operated by Karl Bernhardt, based in West-end Montreal — delivering expert construction across residential, commercial, industrial, and institutional sectors for 25 years.</p>
+
+    <p class="license-line"><strong data-i18n="licensedLabel">Licensed, insured &amp; bonded</strong> — <span data-i18n="rbqLine">RBQ 8361-4172-01</span></p>
 
     <div class="buttons">
-        <a href="#contact" class="btn">Get In Touch</a>
-        <a href="#about" class="btn">Learn More</a>
+        <a href="#contact" class="btn" data-i18n="ctaContact">Get In Touch</a>
+        <a href="#about" class="btn" data-i18n="ctaLearn">Learn More</a>
     </div>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="section-title">BUILT ON<span class="yellow"> EXPERTISE</span></div>
+  <h2 class="section-title"><span data-i18n="aboutTitle1">BUILT ON</span><span class="yellow" data-i18n="aboutTitle2"> EXPERTISE</span></h2>
 
   <div class="service">
     <div>
-      <p style="color:#ccc;">
-        KB Groupe Construction is owned and operated by Karl Bernhardt — a licensed, insured, and bonded general contractor serving the Greater Montreal area. With deep expertise across three major construction disciplines, we bring quality craftsmanship and professional project management to every job.
+      <p style="color:#ccc;" data-i18n="aboutBody">
+        For 25 years, KB Groupe Construction has been owned and operated by Karl Bernhardt — a licensed, insured, and bonded general contractor (RBQ 8361-4172-01) serving the Greater Montreal area. With deep expertise across three major construction disciplines, we bring quality craftsmanship and professional project management to every job.
         From intricate brick and stone work to full-scale commercial projects, KB Construction is your trusted partner from the first estimate to the final inspection.
       </p>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="KB Groupe Construction">
+    <img src="images/team_jobsite.jpg" alt="Karl Bernhardt and the KB Construction Group team on a Montreal job site" width="1200" height="800" loading="lazy">
   </div>
 </section>
 
 <!-- RESIDENTIAL -->
 <section id="residential">
- <h2 class="section-title">RESIDENTIAL <span class="yellow">RENOVATION</span></h2>
+  <h2 class="section-title"><span data-i18n="resTitle1">RESIDENTIAL</span> <span class="yellow" data-i18n="resTitle2">RENOVATION</span></h2>
 
   <div class="service">
-    <img src="images/kitchen_image.jpg" alt="Construction image">
+    <img src="images/kitchen_image.jpg" alt="Modern kitchen renovation completed by KB Construction Group in Montreal" width="1200" height="800" loading="lazy">
     <div>
-      <p We transform Montreal homes with expert renovation work — from full kitchen and bathroom remodels to basement finishing and exterior upgrades. Every detail is handled with care and professionalism.</p>
+      <p data-i18n="resBody">We transform Montreal homes with expert renovation work — from full kitchen and bathroom remodels to basement finishing and exterior upgrades. Every detail is handled with care and professionalism.</p>
       <ul>
-        <li>Bathrooms, Kitchens & Basements</li>
-        <li>Interior & Exterior Renovation</li>
-        <li>Specialized Finishing Work</li>
-        <li>Detailed & Specialised Work</li>
+        <li data-i18n="resList1">Bathrooms, Kitchens &amp; Basements</li>
+        <li data-i18n="resList2">Interior &amp; Exterior Renovation</li>
+        <li data-i18n="resList3">Specialized Finishing Work</li>
+        <li data-i18n="resList4">Detailed &amp; Specialized Work</li>
       </ul>
     </div>
   </div>
@@ -358,71 +573,246 @@ button {
 
 <!-- COMMERCIAL -->
 <section id="commercial">
-  <div class="section-title">COMMERCIAL <span class="yellow">CONSTRUCTION</span></div>
+  <h2 class="section-title"><span data-i18n="comTitle1">COMMERCIAL</span> <span class="yellow" data-i18n="comTitle2">CONSTRUCTION</span></h2>
 
   <div class="service">
     <div>
-      <p>From high-rise swing stage work to SMART building systems, KB Construction has the expertise and certified labour to handle complex large-scale projects on time and within budget.</p>
+      <p data-i18n="comBody">From high-rise swing stage work to SMART building systems, KB Construction has the expertise and certified labour to handle complex large-scale projects on time and within budget. Our 24/7 emergency team also responds to water, smoke, and fire damage restoration.</p>
       <ul>
-        <li>Project Management</li>
-        <li>Height Work & Swing Stage</li>
-        <li>Mechanical Systems</li>
-        <li>Emergency Restoration</li>
-        <li>Water,Smoke & Fire Damage Restore</li>
-        <li>SMART Building Management</li>
-        <li>Hiring Out of Carded Labour</li>
+        <li data-i18n="comList1">Project Management</li>
+        <li data-i18n="comList2">Height Work &amp; Swing Stage</li>
+        <li data-i18n="comList3">Mechanical Systems</li>
+        <li data-i18n="comList4">24/7 Emergency Restoration</li>
+        <li data-i18n="comList5">Water, Smoke &amp; Fire Damage Restoration</li>
+        <li data-i18n="comList6">SMART Building Management</li>
+        <li data-i18n="comList7">Hiring Out of Carded Labour</li>
       </ul>
     </div>
 
-    <img src="images/construction_image.jpg" alt="Construction image">
+    <img src="images/construction_image.jpg" alt="Commercial construction and swing stage work by KB Construction Group in Montreal" width="1200" height="800" loading="lazy">
   </div>
 </section>
 
 <!-- BRICK -->
 <section id="brick">
-  <div class="section-title">BRICK WORK & <span class="yellow">MASONRY</span></div>
+  <h2 class="section-title"><span data-i18n="brickTitle1">BRICK WORK &amp;</span> <span class="yellow" data-i18n="brickTitle2">MASONRY</span></h2>
 
   <div class="service">
-    <img src="images/stone_slabs_image.jpg" alt="Construction image">
+    <img src="images/stone_slabs_image.jpg" alt="Brick and stone masonry work by KB Construction Group in Montreal" width="1200" height="800" loading="lazy">
     <div>
-      <p>From precise brick-laying to decorative stone finishes, our masonry specialists deliver structural integrity and visual craftsmanship that stands the test of time.</p>
+      <p data-i18n="brickBody">From precise brick-laying to decorative stone finishes, our masonry specialists deliver structural integrity and visual craftsmanship that stands the test of time.</p>
       <ul>
-        <li>Brick Work</li>
-        <li>Concrete Work</li>
-        <li>Stone Work</li>
-        <li>Slab Work</li>
+        <li data-i18n="brickList1">Brick Work</li>
+        <li data-i18n="brickList2">Concrete Work</li>
+        <li data-i18n="brickList3">Stone Work</li>
+        <li data-i18n="brickList4">Slab Work</li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- TRUST BADGES -->
+<div class="trust">
+  <div class="trust-title" data-i18n="trustTitle">Licensed &amp; Recognized By</div>
+  <div class="badge-row">
+    <a href="https://www.rbq.gouv.qc.ca/en/piv/home.html" target="_blank" rel="noopener">RBQ — 8361-4172-01</a>
+    <a href="https://www.bbb.org/canada/" target="_blank" rel="noopener">BBB</a>
+    <a href="https://www.cmhc-schl.gc.ca/en/index.cfm" target="_blank" rel="noopener">CMHC</a>
+    <a href="https://www.hc-sc.gc.ca/index-eng.php" target="_blank" rel="noopener">Health Canada</a>
+  </div>
+</div>
+
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-title">CONTACT <span class="yellow">US</span></div>
+  <h2 class="section-title"><span data-i18n="contactTitle1">CONTACT</span> <span class="yellow" data-i18n="contactTitle2">US</span></h2>
 
   <div class="contact-box">
 
-    <!-- FORM (Formspree working version) -->
-    <form action="https://formspree.io/f/xqeogboy" method="POST">
+    <!-- FORM (Formspree) -->
+    <form id="contact-form" action="https://formspree.io/f/xqeogboy" method="POST">
 
-      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="hidden" name="_subject" value="New website inquiry — KB Groupe Construction">
 
-      <input type="email" name="email" placeholder="Your Email" required>
+      <label for="name" style="position:absolute; left:-9999px;" data-i18n="formNameLabel">Your Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" data-i18n-placeholder="formNamePlaceholder" placeholder="Your Name" required>
 
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <label for="email" style="position:absolute; left:-9999px;" data-i18n="formEmailLabel">Your Email</label>
+      <input type="email" id="email" name="_replyto" autocomplete="email" data-i18n-placeholder="formEmailPlaceholder" placeholder="Your Email" required>
 
-      <button type="submit">Send Message</button>
+      <label for="phone" style="position:absolute; left:-9999px;" data-i18n="formPhoneLabel">Your Phone</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel" data-i18n-placeholder="formPhonePlaceholder" placeholder="Your Phone (optional)">
+
+      <label for="message" style="position:absolute; left:-9999px;" data-i18n="formMessageLabel">Your Message</label>
+      <textarea id="message" name="message" rows="6" data-i18n-placeholder="formMessagePlaceholder" placeholder="Your Message" required></textarea>
+
+      <!-- honeypot anti-spam field — must be named _gotcha for Formspree to auto-filter it -->
+      <label for="_gotcha" class="hp-field" aria-hidden="true">Leave this field empty</label>
+      <input type="text" id="_gotcha" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
+
+      <button type="submit" data-i18n="formSubmit">Send Message</button>
+      <p id="form-status" role="status" style="margin-top:10px; font-size:14px;"></p>
 
     </form>
 
     <div style="color:#ccc;">
-      <p><strong>Phone:</strong> (To be added)</p>
-      <p><strong>Email:</strong> info@kbconstruction.ca</p>
-      <p><strong>Location:</strong> West-End Montreal</p>
+      <p><strong data-i18n="phoneLabel">Phone:</strong> <a href="tel:+15143595328" style="color:#E6A51A; text-decoration:none;">(514) 359-5328</a> <span data-i18n="phoneNote">(24/7 for emergencies)</span></p>
+      <p><strong data-i18n="emailLabel">Email:</strong> <a href="mailto:info@kbconstruction.ca" style="color:#E6A51A; text-decoration:none;">info@kbconstruction.ca</a></p>
+      <p><strong data-i18n="locationLabel">Location:</strong> <span data-i18n="locationValue">West-End Montreal</span></p>
+      <p><strong data-i18n="licenseLabel">RBQ License:</strong> 8361-4172-01</p>
     </div>
 
   </div>
 </section>
+</main>
+
+<footer>
+  <p data-i18n="footerLine">&copy; <span id="year"></span> KB Groupe Construction Inc. — RBQ 8361-4172-01 — All rights reserved</p>
+  <p class="footer-links">
+    <a href="https://www.rbq.gouv.qc.ca/en/piv/home.html" target="_blank" rel="noopener">RBQ</a>|
+    <a href="https://www.bbb.org/canada/" target="_blank" rel="noopener">BBB</a>|
+    <a href="https://www.cmhc-schl.gc.ca/en/index.cfm" target="_blank" rel="noopener">CMHC</a>|
+    <a href="https://www.hc-sc.gc.ca/index-eng.php" target="_blank" rel="noopener">Health Canada</a>
+  </p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---- Contact form: submit via fetch so we can show an inline status
+// message instead of redirecting off-site to Formspree's default page ----
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+const statusMessages = {
+  sending: { en: "Sending…", fr: "Envoi en cours…" },
+  success: { en: "Thanks — your message has been sent. We'll be in touch soon.", fr: "Merci — votre message a été envoyé. Nous vous répondrons bientôt." },
+  error: { en: "Something went wrong. Please call us at (514) 359-5328 instead.", fr: "Une erreur est survenue. Veuillez nous appeler au (514) 359-5328." }
+};
+function currentLang() {
+  return document.getElementById('html-root').getAttribute('lang').startsWith('fr') ? 'fr' : 'en';
+}
+contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const lang = currentLang();
+  formStatus.textContent = statusMessages.sending[lang];
+  fetch(contactForm.action, {
+    method: 'POST',
+    body: new FormData(contactForm),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      formStatus.textContent = statusMessages.success[lang];
+      contactForm.reset();
+    } else {
+      formStatus.textContent = statusMessages.error[lang];
+    }
+  }).catch(() => {
+    formStatus.textContent = statusMessages.error[lang];
+  });
+});
+
+// ---- Bilingual (EN/FR) toggle ----
+// This covers the Quebec French-language requirement for commercial sites
+// and lets the same URL rank for French local-search queries.
+// For deeper SEO than a JS toggle allows, true separate /fr/ URLs are recommended later.
+const translations = {
+  emergencyBar: { en: "24/7 EMERGENCY RESTORATION SERVICE", fr: "SERVICE DE RESTAURATION D'URGENCE 24/7" },
+  rbqNav: { en: "RBQ 8361-4172-01", fr: "RBQ 8361-4172-01" },
+  navHome: { en: "Home", fr: "Accueil" },
+  navAbout: { en: "About", fr: "À propos" },
+  navResidential: { en: "Residential", fr: "Résidentiel" },
+  navCommercial: { en: "Commercial", fr: "Commercial" },
+  navBrick: { en: "Brick Work", fr: "Maçonnerie" },
+  navContact: { en: "Contact", fr: "Contact" },
+  heroLine1: { en: "GENERAL CONTRACTOR", fr: "ENTREPRENEUR GÉNÉRAL" },
+  heroLine2: { en: "IN MONTREAL", fr: "À MONTRÉAL" },
+  heroTagline: { en: "25 YEARS OF BUILDING ON TRUST", fr: "25 ANS À BÂTIR LA CONFIANCE" },
+  heroBody: { en: "KB Groupe Construction is a licensed general contractor owned and operated by Karl Bernhardt, based in West-end Montreal — delivering expert construction across residential, commercial, industrial, and institutional sectors for 25 years.", fr: "KB Groupe Construction est un entrepreneur général licencié, dirigé par Karl Bernhardt et basé dans l'ouest de Montréal — offrant des services de construction experts dans les secteurs résidentiel, commercial, industriel et institutionnel depuis 25 ans." },
+  licensedLabel: { en: "Licensed, insured & bonded", fr: "Licencié, assuré et cautionné" },
+  rbqLine: { en: "RBQ 8361-4172-01", fr: "RBQ 8361-4172-01" },
+  ctaContact: { en: "Get In Touch", fr: "Nous Joindre" },
+  ctaLearn: { en: "Learn More", fr: "En Savoir Plus" },
+  aboutTitle1: { en: "BUILT ON", fr: "BÂTI SUR" },
+  aboutTitle2: { en: " EXPERTISE", fr: " L'EXPERTISE" },
+  aboutBody: { en: "For 25 years, KB Groupe Construction has been owned and operated by Karl Bernhardt — a licensed, insured, and bonded general contractor (RBQ 8361-4172-01) serving the Greater Montreal area. With deep expertise across three major construction disciplines, we bring quality craftsmanship and professional project management to every job. From intricate brick and stone work to full-scale commercial projects, KB Construction is your trusted partner from the first estimate to the final inspection.", fr: "Depuis 25 ans, KB Groupe Construction est dirigé par Karl Bernhardt — un entrepreneur général licencié, assuré et cautionné (RBQ 8361-4172-01) desservant le Grand Montréal. Grâce à une expertise approfondie dans trois grandes disciplines de la construction, nous apportons un savoir-faire de qualité et une gestion de projet professionnelle à chaque chantier. Des travaux minutieux de brique et de pierre aux projets commerciaux d'envergure, KB Construction est votre partenaire de confiance, du premier estimé à l'inspection finale." },
+  resTitle1: { en: "RESIDENTIAL", fr: "RÉNOVATION" },
+  resTitle2: { en: "RENOVATION", fr: "RÉSIDENTIELLE" },
+  resBody: { en: "We transform Montreal homes with expert renovation work — from full kitchen and bathroom remodels to basement finishing and exterior upgrades. Every detail is handled with care and professionalism.", fr: "Nous transformons les résidences montréalaises grâce à des travaux de rénovation experts — de la rénovation complète de cuisines et salles de bain à la finition de sous-sols et aux rénovations extérieures. Chaque détail est traité avec soin et professionnalisme." },
+  resList1: { en: "Bathrooms, Kitchens & Basements", fr: "Salles de bain, cuisines et sous-sols" },
+  resList2: { en: "Interior & Exterior Renovation", fr: "Rénovation intérieure et extérieure" },
+  resList3: { en: "Specialized Finishing Work", fr: "Travaux de finition spécialisés" },
+  resList4: { en: "Detailed & Specialized Work", fr: "Travaux détaillés et spécialisés" },
+  comTitle1: { en: "COMMERCIAL", fr: "CONSTRUCTION" },
+  comTitle2: { en: "CONSTRUCTION", fr: "COMMERCIALE" },
+  comBody: { en: "From high-rise swing stage work to SMART building systems, KB Construction has the expertise and certified labour to handle complex large-scale projects on time and within budget. Our 24/7 emergency team also responds to water, smoke, and fire damage restoration.", fr: "Des travaux en nacelle sur immeubles de grande hauteur aux systèmes de bâtiments intelligents, KB Construction possède l'expertise et la main-d'œuvre certifiée pour gérer des projets complexes de grande envergure, à temps et selon le budget. Notre équipe d'urgence 24/7 intervient également en cas de dégâts d'eau, de fumée et d'incendie." },
+  comList1: { en: "Project Management", fr: "Gestion de projet" },
+  comList2: { en: "Height Work & Swing Stage", fr: "Travaux en hauteur et nacelle" },
+  comList3: { en: "Mechanical Systems", fr: "Systèmes mécaniques" },
+  comList4: { en: "24/7 Emergency Restoration", fr: "Restauration d'urgence 24/7" },
+  comList5: { en: "Water, Smoke & Fire Damage Restoration", fr: "Restauration après dégâts d'eau, de fumée et d'incendie" },
+  comList6: { en: "SMART Building Management", fr: "Gestion de bâtiments intelligents" },
+  comList7: { en: "Hiring Out of Carded Labour", fr: "Location de main-d'œuvre carte de compétence" },
+  brickTitle1: { en: "BRICK WORK &", fr: "MAÇONNERIE ET" },
+  brickTitle2: { en: "MASONRY", fr: "PIERRE" },
+  brickBody: { en: "From precise brick-laying to decorative stone finishes, our masonry specialists deliver structural integrity and visual craftsmanship that stands the test of time.", fr: "De la pose précise de briques aux finitions décoratives en pierre, nos spécialistes en maçonnerie assurent une intégrité structurale et un savoir-faire visuel qui résistent à l'épreuve du temps." },
+  brickList1: { en: "Brick Work", fr: "Travaux de brique" },
+  brickList2: { en: "Concrete Work", fr: "Travaux de béton" },
+  brickList3: { en: "Stone Work", fr: "Travaux de pierre" },
+  brickList4: { en: "Slab Work", fr: "Travaux de dalle" },
+  trustTitle: { en: "Licensed & Recognized By", fr: "Licencié et reconnu par" },
+  contactTitle1: { en: "CONTACT", fr: "NOUS" },
+  contactTitle2: { en: "US", fr: "JOINDRE" },
+  formNameLabel: { en: "Your Name", fr: "Votre nom" },
+  formNamePlaceholder: { en: "Your Name", fr: "Votre nom" },
+  formEmailLabel: { en: "Your Email", fr: "Votre courriel" },
+  formEmailPlaceholder: { en: "Your Email", fr: "Votre courriel" },
+  formPhoneLabel: { en: "Your Phone", fr: "Votre téléphone" },
+  formPhonePlaceholder: { en: "Your Phone (optional)", fr: "Votre téléphone (facultatif)" },
+  formMessageLabel: { en: "Your Message", fr: "Votre message" },
+  formMessagePlaceholder: { en: "Your Message", fr: "Votre message" },
+  formSubmit: { en: "Send Message", fr: "Envoyer" },
+  phoneLabel: { en: "Phone:", fr: "Téléphone :" },
+  phoneNote: { en: "(24/7 for emergencies)", fr: "(24/7 pour urgences)" },
+  emailLabel: { en: "Email:", fr: "Courriel :" },
+  locationLabel: { en: "Location:", fr: "Emplacement :" },
+  locationValue: { en: "West-End Montreal", fr: "Ouest de Montréal" },
+  licenseLabel: { en: "RBQ License:", fr: "Licence RBQ :" },
+  footerLine: { en: "© {year} KB Groupe Construction Inc. — RBQ 8361-4172-01 — All rights reserved", fr: "© {year} KB Groupe Construction Inc. — RBQ 8361-4172-01 — Tous droits réservés" }
+};
+
+function applyLanguage(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[key]) {
+      if (key === 'footerLine') {
+        el.childNodes[0].nodeValue = translations[key][lang].split('{year}')[0].replace('©', '©') + ' ';
+        // rebuild footer line around the existing #year span
+        el.innerHTML = translations[key][lang].replace('{year}', '<span id="year"></span>');
+        document.getElementById('year').textContent = new Date().getFullYear();
+      } else {
+        el.textContent = translations[key][lang];
+      }
+    }
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[key]) el.setAttribute('placeholder', translations[key][lang]);
+  });
+  document.getElementById('html-root').setAttribute('lang', lang === 'fr' ? 'fr-CA' : 'en-CA');
+  document.getElementById('lang-toggle').textContent = lang === 'fr' ? 'EN' : 'FR';
+  try { localStorage.setItem('kb-lang', lang); } catch (e) {}
+}
+
+document.getElementById('lang-toggle').addEventListener('click', () => {
+  const current = document.getElementById('html-root').getAttribute('lang').startsWith('fr') ? 'fr' : 'en';
+  applyLanguage(current === 'fr' ? 'en' : 'fr');
+});
+
+(function initLanguage() {
+  let saved = 'en';
+  try { saved = localStorage.getItem('kb-lang') || 'en'; } catch (e) {}
+  if (saved === 'fr') applyLanguage('fr');
+})();
+</script>
 
 </body>
 </html>
